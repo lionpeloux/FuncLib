@@ -1,0 +1,9 @@
+FuncLib comes with pre-compiled Ipopt binaries embedded in the Visual Studio
+project. The included files are the 32 bit version. If you want to the 64 bit
+version (or any other version), replace the DLLs in the FuncLibIpopt project
+folder with a new set of files. Pre-compiled binaries may be found here:
+
+http://www.coin-or.org/download/binary/Ipopt/
+
+The DLLs are automatically copied to the output folder of any project
+depending on FuncLibIpopt.

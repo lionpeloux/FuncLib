@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug32</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A2854CFC-0221-4991-9E3F-8989BAE29A46}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FuncLibGH</RootNamespace>
+    <AssemblyName>FuncLibGH</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug32|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug64|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="RhinoCommon">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>c:\Program Files (x86)\Rhinoceros 5\System\rhinocommon.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Grasshopper">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Common Files\McNeel\Rhinoceros\5.0\Plug-ins\Grasshopper (b45a29b1-4343-4035-989e-044e8580d9cf)\0.9.75.0\Grasshopper.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GH_IO">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Common Files\McNeel\Rhinoceros\5.0\Plug-ins\Grasshopper (b45a29b1-4343-4035-989e-044e8580d9cf)\0.9.75.0\GH_IO.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BenchSimpleElastica\CureosProblem.cs" />
+    <Compile Include="BenchSimpleElastica\GHComponent_BenchSimpleElastica_FuncLibBFGS.cs" />
+    <Compile Include="BenchSimpleElastica\GHComponent_BenchSimpleElastica_FuncLibIPOPT.cs" />
+    <Compile Include="BenchSimpleElastica\GHComponent_BenchSimpleElastica_CureosIPOPT.cs" />
+    <Compile Include="BenchSimpleElastica\GHComponent_IPOPT_Elastica.cs" />
+    <Compile Include="BenchSimpleElastica\SimpleElastica.cs" />
+    <Compile Include="TestFunction\GHComponent_Plot_TestFunction.cs" />
+    <Compile Include="TestFunction\GHComponent_IPOPT_TestFunction.cs" />
+    <Compile Include="FuncLibGHInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestFunction\TestFunction.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FuncLibConsole\FuncLibConsole.csproj">
+      <Project>{84bcc13d-040a-4b2a-a7d5-533cf2dfda2f}</Project>
+      <Name>FuncLibConsole</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FuncLibIpopt\FuncLibIpopt.csproj">
+      <Project>{4485f114-2adc-4801-a65e-c0b59f72c703}</Project>
+      <Name>FuncLibIpopt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FuncLib\FuncLib.csproj">
+      <Project>{b89635a4-ded5-4b1c-80ce-ffd0ca82bbe9}</Project>
+      <Name>FuncLib</Name>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>Copy "$(TargetPath)" "$(TargetDir)$(ProjectName).gha"
+Erase "$(TargetPath)"
+
+Copy "$(TargetDir)FuncLibGH.gha" "C:\Users\Lionel du Peloux\AppData\Roaming\Grasshopper\Libraries\FuncLib"
+Copy "$(TargetDir)FuncLib.dll" "C:\Users\Lionel du Peloux\AppData\Roaming\Grasshopper\Libraries\FuncLib"
+Copy "$(TargetDir)FuncLibIpopt.dll" "C:\Users\Lionel du Peloux\AppData\Roaming\Grasshopper\Libraries\FuncLib"
+Copy "$(TargetDir)Ipopt39.dll" "C:\Users\Lionel du Peloux\AppData\Roaming\Grasshopper\Libraries\FuncLib"
+Copy "$(TargetDir)IpOptFSS39.dll" "C:\Users\Lionel du Peloux\AppData\Roaming\Grasshopper\Libraries\FuncLib"</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug32|AnyCPU' ">
+    <StartArguments>
+    </StartArguments>
+    <StartAction>Program</StartAction>
+    <StartProgram>c:\Program Files (x86)\Rhinoceros 5\System\Rhino4.exe</StartProgram>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <FallbackCulture>en-US</FallbackCulture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug64|AnyCPU'">
+    <StartProgram>C:\Program Files\Rhinoceros 5 (64-bit)\System\Rhino.exe</StartProgram>
+    <StartArguments>
+    </StartArguments>
+    <StartAction>Program</StartAction>
+  </PropertyGroup>
+</Project>

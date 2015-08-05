@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FuncLib.Optimization.Ipopt.Cureos.IpoptAdapter" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABCAAAAAAABAAAAgAAIAAAAAACCAACAACQ=</HashCode>
+      <FileName>Ipopt\Cureos\IpoptAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuncLib.Optimization.Ipopt.Cureos.IpoptProblem" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="FuncLib.Optimization.Ipopt.Cureos.IpoptProblem.ObjectiveEvaluator" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Ipopt\Cureos\IpoptProblem.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="FuncLib.Optimization.Ipopt.Cureos.IpoptProblem.ConstraintsEvaluator">
+        <TypeIdentifier>
+          <NewMemberFileName>Ipopt\Cureos\IpoptProblem.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="FuncLib.Optimization.Ipopt.Cureos.IpoptProblem.ObjectiveGradientEvaluator" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Ipopt\Cureos\IpoptProblem.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="FuncLib.Optimization.Ipopt.Cureos.IpoptProblem.JacobianEvaluator" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Ipopt\Cureos\IpoptProblem.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="FuncLib.Optimization.Ipopt.Cureos.IpoptProblem.HessianEvaluator" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Ipopt\Cureos\IpoptProblem.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="FuncLib.Optimization.Ipopt.Cureos.IpoptProblem.IntermediateReporter" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Ipopt\Cureos\IpoptProblem.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>gAgABAADACBAAIBAAAEAAAABAAQIABABAYAABAAKAAg=</HashCode>
+      <FileName>Ipopt\Cureos\IpoptProblem.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FuncLib.Optimization.Ipopt.IpoptIntermediateEventArgs" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAwABBAIAAQIAAQICAAAQAAwAEAAJAAMAAAABAg=</HashCode>
+      <FileName>Ipopt\IpoptIntermediateEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuncLib.Optimization.Ipopt.IpoptOptimizer" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAQAAAAgAAAAAAAAAAAAAAAAAEACJAAAQ=</HashCode>
+      <FileName>Ipopt\IpoptOptimizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuncLib.Optimization.Ipopt.IpoptOptimizerResult" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAhAAAAAAAAAAAAAAggAAAIAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ipopt\IpoptOptimizerResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuncLib.Optimization.Ipopt.IpoptOption" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIIAAAAAgQAQEAAAAAAQAAgBAAAAAAQAgAAAAAAA=</HashCode>
+      <FileName>Ipopt\IpoptOption.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuncLib.Optimization.Ipopt.IpoptOptionCollection" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAACAAABAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Ipopt\IpoptOptionCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuncLib.Optimization.Ipopt.SparseFunction" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAQAAgAAAAAAAIAAAAAAAAAAAAAEg=</HashCode>
+      <FileName>Ipopt\SparseFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuncLib.Optimization.Ipopt.SparseFunctionGradient" Collapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Ipopt\SparseFunctionGradient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuncLib.Optimization.Ipopt.SparseFunctionHessian" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQABA=</HashCode>
+      <FileName>Ipopt\SparseFunctionHessian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuncLib.Optimization.Ipopt.IpoptStringOption">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Ipopt\IpoptOption.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuncLib.Optimization.Ipopt.IpoptIntegerOption">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIACIAAAAAAAQAAAAAACAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Ipopt\IpoptOption.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuncLib.Optimization.Ipopt.IpoptNumberOption">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIACIAAAAAAAQAAAAAACAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Ipopt\IpoptOption.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="FuncLib.Optimization.Ipopt.Cureos.IpoptBoolType" Collapsed="true">
+    <Position X="9.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Ipopt\Cureos\IpoptBoolType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="FuncLib.Optimization.Ipopt.Cureos.IpoptIndexStyle" Collapsed="true">
+    <Position X="11" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Ipopt\Cureos\IpoptIndexStyle.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="FuncLib.Optimization.Ipopt.IpoptAlgorithmMode" Collapsed="true">
+    <Position X="7.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Ipopt\IpoptAlgorithmMode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="FuncLib.Optimization.Ipopt.IpoptReturnCode" Collapsed="true">
+    <Position X="12.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAAAAAAAIAQCCAAwBgAAIAAAACCAARgGAAAAAAAIQ=</HashCode>
+      <FileName>Ipopt\IpoptReturnCode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="FuncLib.Optimization.Ipopt.Cureos.Eval_F_CB" Collapsed="true">
+    <Position X="7.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAEAAAEAAAAAAACAEA=</HashCode>
+      <FileName>Ipopt\Cureos\IpoptAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuncLib.Optimization.Ipopt.Cureos.Eval_Grad_F_CB" Collapsed="true">
+    <Position X="11" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKAAAAAAAAAAAAAAAAAAAAAAAEAAAEAAAAAAAAAEA=</HashCode>
+      <FileName>Ipopt\Cureos\IpoptAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuncLib.Optimization.Ipopt.Cureos.Eval_G_CB" Collapsed="true">
+    <Position X="9.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAAAAAAAAAAAAAAAAAAAAAgEAAAEAAAAAAAAAEA=</HashCode>
+      <FileName>Ipopt\Cureos\IpoptAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuncLib.Optimization.Ipopt.Cureos.Eval_Jac_G_CB" Collapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAACAAAAAAAAAAAAAAAAAAAAAAgEAAYEAAQAAAAAAEA=</HashCode>
+      <FileName>Ipopt\Cureos\IpoptAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuncLib.Optimization.Ipopt.Cureos.Eval_H_CB" Collapsed="true">
+    <Position X="12.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAiAAIAAAAAAAAAAAAQAAAAAAAUAAAAAAQAGAACAEA=</HashCode>
+      <FileName>Ipopt\Cureos\IpoptAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuncLib.Optimization.Ipopt.Cureos.Intermediate_CB" Collapsed="true">
+    <Position X="11" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQAACAAAAAAIAAAQEAAAAAAEAAQACAAAAAYCAAA=</HashCode>
+      <FileName>Ipopt\Cureos\IpoptAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuncLib.Optimization.Ipopt.Cureos.EvaluateObjectiveDelegate" Collapsed="true">
+    <Position X="7.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAgAAAAAAAAAAAAAAAAAAEAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Ipopt\Cureos\IpoptProblem.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuncLib.Optimization.Ipopt.Cureos.EvaluateObjectiveGradientDelegate" Collapsed="true">
+    <Position X="9.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKAAAAgAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ipopt\Cureos\IpoptProblem.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuncLib.Optimization.Ipopt.Cureos.EvaluateConstraintsDelegate" Collapsed="true">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAAAgAAAAAAAAAAAAAAAAAgEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ipopt\Cureos\IpoptProblem.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuncLib.Optimization.Ipopt.Cureos.EvaluateJacobianDelegate" Collapsed="true">
+    <Position X="12.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAACAAAAgAAAAAAAAAAAAAAAAAgEAAYAAAQAAAAAAAA=</HashCode>
+      <FileName>Ipopt\Cureos\IpoptProblem.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuncLib.Optimization.Ipopt.Cureos.EvaluateHessianDelegate" Collapsed="true">
+    <Position X="11" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiAAIAgAAAAAAAAAAAAAAAAAAUAAAAAAQAGAACAAA=</HashCode>
+      <FileName>Ipopt\Cureos\IpoptProblem.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuncLib.Optimization.Ipopt.Cureos.IntermediateDelegate" Collapsed="true">
+    <Position X="12.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQAACAAAAAAIAAAAEAAAAAAEAAQACAAAAAYCAAA=</HashCode>
+      <FileName>Ipopt\Cureos\IpoptProblem.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
